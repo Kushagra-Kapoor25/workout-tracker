@@ -30,7 +30,7 @@ today = datetime.now().strftime("%d/%m/%Y")
 time = datetime.now().strftime("%H:%M:%S")
 
 
-workout_sheet_endpoint = "https://api.sheety.co/22271f0b672b0caa44a563f53e425469/workoutTracking/workouts"
+workout_sheet_endpoint = os.getenv("WORKOUT_SHEET_ENDPOINT")
 
 headers_for_sheet = {
     "Authorization":BEARER_AUTH_KEY
